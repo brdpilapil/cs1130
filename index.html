@@ -1,0 +1,252 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>My awesome webpage</title>
+
+        <!-- Load external CSS styles -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #3b3a3a;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                         0 0 20px rgba(255, 255, 255, 0.8),
+                         0 0 30px rgba(255, 255, 255, 0.8);
+        }
+
+        .header {
+            margin-bottom: 80px; 
+            margin-top: 20px;
+        }
+        
+        .btns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2.5rem
+        }
+
+        button {
+            padding: 20px 60px;
+            background: #222;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            position: relative;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        button:nth-child(3) {
+            padding: 20px 25px;
+            background: #222;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            position: relative;
+            cursor: pointer;
+            transition: 0.5s;           
+        }
+
+        button:last-child {
+            padding: 20px 75px;
+            background: #222;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            position: relative;
+            cursor: pointer;
+            transition: 0.5s;           
+        }
+
+        button span {
+            color: #fff;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            transition: 0.5s;
+            transiion-delay: 0.1s;
+        }
+
+        button:before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            left: 50%;
+            right: 50%;
+            top: 50%;
+            bottom: 50%;
+            transition: 0.5s;
+            transition-delay: 0.5s;
+        }
+
+        button:first-child::before {
+            background: #00ff00;
+            box-shadow: 0 0 10px #00ff00,
+                        0 0 30px #00ff00,
+                        0 0 50px #00ff00;
+
+        }
+        button:nth-child(2)::before {
+            background: #ff0fe7;
+            box-shadow: 0 0 10px #ff0fe7,
+                        0 0 30px #ff0fe7,
+                        0 0 50px #ff0fe7;
+
+        }
+        button:nth-child(3)::before {
+            background: #00fbff;
+            box-shadow: 0 0 10px #00fbff,
+                        0 0 30px #00fbff,
+                        0 0 50px #00fbff;
+
+        }
+
+        button:last-child::before {
+            background: #fe0000;
+            box-shadow: 0 0 10px #fe0000,
+                        0 0 30px #fe0000,
+                        0 0 50px #fe0000;
+
+        }
+
+        button div {
+            position: absolute;
+            transition: 0.5s;
+        }
+
+        button:first-child div {
+            background: #00ff00;
+            box-shadow: 0 0 10px #00ff00,
+                        0 0 30px #00ff00,
+                        0 0 50px #00ff00;           
+        }
+        button:nth-child(2) div {
+            background: #ff0fe7;
+            box-shadow: 0 0 10px #ff0fe7,
+                        0 0 30px #ff0fe7,
+                        0 0 50px #ff0fe7;           
+        }
+        button:nth-child(3) div {
+            background: #00fbff;
+            box-shadow: 0 0 10px #00fbff,
+                        0 0 30px #00fbff,
+                        0 0 50px #00fbff;          
+        }
+        button:last-child div {
+            background: #fe0000;
+            box-shadow: 0 0 10px #fe0000,
+                        0 0 30px #fe0000,
+                        0 0 50px #fe0000;          
+        }
+
+        button .top {
+            width: 18px;
+            height: 3px;
+            top: 0;
+            left: 0;
+        }
+
+        button .bottom {
+            width: 18px;
+            height: 3px;
+            bottom: 0;
+            right: 0;
+        }
+
+        button .left {
+            width: 3px;
+            height: 18px;
+            top: 0;
+            left: 0;
+        }
+
+        button .right {
+            width: 3px;
+            height: 18px;
+            bottom: 0;
+            right: 0;
+        }
+
+        button:hover .left,
+        button:hover .right{
+            height: 100%
+        }
+
+        button:hover .top,
+        button:hover .bottom{
+            width: 100%
+        }
+
+        button:hover::before{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="header">
+        <h1>Welcome to my awesome space</h1><br>
+        </div>
+        
+    <div class="btns">
+        <button type="button" onclick="window.location.href='Conversion.html'">
+            <span>Conversion</span>
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="bottom"></div>
+            <div class="right"></div>
+        </button>
+        <button type="button" onclick="window.location.href='IncomeTaxCalculator.html'">
+            <span>Income Tax</span>
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="bottom"></div>
+            <div class="right"></div>
+        </button>
+        <button type="button" onclick="window.location.href='NaturalNumbers.html'">
+            <span>Natural Numbers</span>
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="bottom"></div>
+            <div class="right"></div>
+        </button>
+        <button type="button" onclick="window.location.href='Payroll.html'">
+            <span>Payroll</span>
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="bottom"></div>
+            <div class="right"></div>
+        </button>
+    </div>
+    <!--<a href="Conversion.html">Go to unit converter</a><br>
+    <a href="IncomeTaxCalculator.html">Go to Income Tax Calculator</a><br>
+    <a href="NaturalNumbers.html">Go to Natural Numbers</a><br>
+    <a href="Payroll.html">Go to Payroll</a><br>-->
+    </body>
+
+</html>
