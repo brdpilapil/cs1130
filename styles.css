@@ -1,0 +1,93 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: papayawhip;
+    margin: 20px;
+    }
+
+h2,h3,h4 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    }
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    }
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+button:hover {
+    background-color: #45a049;
+    }
+
+table {
+    min-width: 800px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);
+    margin: auto auto;
+    }
+
+th {
+    background-color: #57a959;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    }
+
+th, td {
+    padding: 12px 15px;
+}
+
+td::not:last-child {
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f373;
+}
+
+tr:last-child {
+    border-bottom: 2px solid #57a959;
+}
+
+a {
+    text-align: center;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    }
+
+a:hover {
+    text-decoration: underline;
+    color: dodgerblue;
+    }
